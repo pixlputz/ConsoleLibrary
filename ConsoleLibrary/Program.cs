@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataLibrary.Models;
+using DataLibrary;
+using System;
+using ConsoleLibrary.Services;
 
 namespace ConsoleLibrary
 {
@@ -10,6 +9,17 @@ namespace ConsoleLibrary
     {
         static void Main(string[] args)
         {
+            LibraryService ls = new LibraryService();
+            while (ls.Running)
+            {
+                ls.LibrarySelection();
+
+            }
+
+
+
+
+
         }
     }
 }
