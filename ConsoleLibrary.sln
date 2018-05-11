@@ -3,16 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleLibrary", "ConsoleLibrary\ConsoleLibrary.csproj", "{3A5AA070-CD54-4C4F-80E2-760289938DC1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{12897F92-60BF-4985-A921-803E5B0917D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLibrary", "DataLibrary\DataLibrary.csproj", "{AB070BE3-9752-4B59-A766-C1E9C9F6C953}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebLibrary", "WebLibrary\WebLibrary.xproj", "{F27A420E-1903-44D3-8717-D0A4DDFA6B35}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FBEDA39B-65CB-43ED-8892-518409337A65}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8E236A9A-7B88-4FA4-934A-37F328AA8770}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
 	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ConsoleLibrary", "src\ConsoleLibrary\ConsoleLibrary.xproj", "{9AAE0132-8995-426B-B99A-CBE22BD137F7}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DataLibrary", "src\DataLibrary\DataLibrary.xproj", "{45D29D7E-DDAF-4041-931E-C537F8B4F818}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebLibrary", "src\WebLibrary\WebLibrary.xproj", "{9DAC856C-F2FB-400A-96F2-E92E23A48C62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,20 +22,25 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3A5AA070-CD54-4C4F-80E2-760289938DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A5AA070-CD54-4C4F-80E2-760289938DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A5AA070-CD54-4C4F-80E2-760289938DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A5AA070-CD54-4C4F-80E2-760289938DC1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AB070BE3-9752-4B59-A766-C1E9C9F6C953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB070BE3-9752-4B59-A766-C1E9C9F6C953}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB070BE3-9752-4B59-A766-C1E9C9F6C953}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB070BE3-9752-4B59-A766-C1E9C9F6C953}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F27A420E-1903-44D3-8717-D0A4DDFA6B35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F27A420E-1903-44D3-8717-D0A4DDFA6B35}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F27A420E-1903-44D3-8717-D0A4DDFA6B35}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F27A420E-1903-44D3-8717-D0A4DDFA6B35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AAE0132-8995-426B-B99A-CBE22BD137F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AAE0132-8995-426B-B99A-CBE22BD137F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AAE0132-8995-426B-B99A-CBE22BD137F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AAE0132-8995-426B-B99A-CBE22BD137F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45D29D7E-DDAF-4041-931E-C537F8B4F818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45D29D7E-DDAF-4041-931E-C537F8B4F818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45D29D7E-DDAF-4041-931E-C537F8B4F818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45D29D7E-DDAF-4041-931E-C537F8B4F818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DAC856C-F2FB-400A-96F2-E92E23A48C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DAC856C-F2FB-400A-96F2-E92E23A48C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DAC856C-F2FB-400A-96F2-E92E23A48C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DAC856C-F2FB-400A-96F2-E92E23A48C62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9AAE0132-8995-426B-B99A-CBE22BD137F7} = {12897F92-60BF-4985-A921-803E5B0917D6}
+		{45D29D7E-DDAF-4041-931E-C537F8B4F818} = {12897F92-60BF-4985-A921-803E5B0917D6}
+		{9DAC856C-F2FB-400A-96F2-E92E23A48C62} = {12897F92-60BF-4985-A921-803E5B0917D6}
 	EndGlobalSection
 EndGlobal
